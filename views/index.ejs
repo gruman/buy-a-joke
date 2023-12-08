@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lorem Pickup</title>
+  <meta
+    name="description"
+    content="Filler texts for websites and print projects"
+  />
+
+  <link rel="stylesheet" href="/css/styles.css">
+  <meta name="keywords" content="random, api, node, express, ejs, lorem, ipsum, pickup, lines">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PR4W644QJ9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PR4W644QJ9');
+</script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="/img/joke.png" alt="Gender neutral person laughing" />
+      <div>
+  <h1>Buy a Joke</h1>
+    <p>by <a href="https://gruman.co">Matthew Gruman</a></p>
+  </div>
+  </header>
+    <p>You want a joke? You can have one for free but the rest will cost you a dollar!</p>
+    <p class="line"><%= line %></p>
+
+    <p>Want another?</p>
+    <button onclick="another()">
+      Yes
+    </button>
+    <button id="hideButton" onclick="hideButton()">
+      No
+    </button>
+   </div>
+</body>
+<script>
+ function hideButton() {
+      const hideButton = document.getElementById('hideButton');
+      hideButton.style.display = 'none';
+    }
+
+    function another() {
+      // Replace 'https://example.com' with the actual URL you want to link to
+      window.location.href = '/';
+    }
+
+</script>
+</html>
